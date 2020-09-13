@@ -1,0 +1,65 @@
+/*=========================
+@ Author: Jay Praksh
+@ Email: jp024556@gmail.com
+============================*/
+.jcalendar{
+	font-family: 'Montserrat', sans-serif;
+	width: 280px;
+	box-shadow: 0px 3px 10px #ccc;
+	display: none;
+	position: absolute;
+	/*transition: all 350ms ease-in-out;*/
+	z-index: 1;
+}
+#jcalendar_selectboxes{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-image: linear-gradient(to bottom, #eee, #ccc);
+}
+#jcalendar_selectboxes > select{
+	font-family: 'Montserrat', sans-serif;
+	border: none;
+	outline: none;
+	padding: 10px 5px;
+	cursor: pointer;
+	background-image: linear-gradient(to bottom, #ccc, #eee);
+}
+#jcalendar_y_m{
+	text-align: center;
+	font-size: 1rem;
+	color: #fff;
+	text-shadow: 0px 3px 10px #101010;
+	font-weight: 600;
+}
+.jcalendar > table{
+	width: 100%;
+	border-collapse: collapse;
+}
+.jcalendar > table td, .jcalendar > table th {
+  border: 1px solid #dddddd;
+  padding: 5px;
+  text-align: center;
+}
+.jcalendar > table td{
+	cursor: pointer;
+	transition: all 350ms ease-in-out;
+	width: 40px;
+	height: 20px;
+}
+.jcalendar > table td:hover{
+	background-image: linear-gradient(to bottom, #ff6600, brown);
+	text-shadow: 0px 5px 10px #fff;
+	color: #fff;
+}
+.jcalendar > table th{
+	background-image: linear-gradient(to bottom, #fff, #ccc);
+}
+.JC_ICON{
+	width: 20px;
+	height: 20px;
+	position: relative;
+    top: 4px;
+    left: -5px;
+    cursor: pointer;
+}
