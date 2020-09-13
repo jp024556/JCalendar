@@ -30,7 +30,6 @@ startJC(className, iconURL);
 <body>
 	<form>
 		<input type="text" class="birthday">
-		<input type="submit">
 	</form>
 <!-- JavaScript  -->
 <script src="path_to_jc/JCalendar.js"></script>
