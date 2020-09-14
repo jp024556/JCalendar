@@ -199,12 +199,14 @@ function startJC(cl, icon){
 			for(var i = 0; i < JC_TD.length; i++){
 				JC_TD[i].textContent = "";
 				JC_TD[i].style.backgroundImage = 'linear-gradient(to bottom, #fff, #ccc)';
+				JC_TD[i].style.pointerEvents = 'none';
 			}
 
 			// Populating new data
 			for(var i = 1; i <= total_days; i++){
 				JC_TD[_1stday].textContent = i;
 				JC_TD[_1stday].style.backgroundImage = 'linear-gradient(to bottom, #ff6600, brown)';
+				JC_TD[_1stday].style.pointerEvents = 'auto';
 				JC_TD[_1stday].onclick = function(e){
 					selectDate(e);
 				}
